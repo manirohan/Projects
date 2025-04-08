@@ -1,0 +1,9 @@
+{
+  "id": "2504.05295v1",
+  "title": "Dion: A Communication-Efficient Optimizer for Large Models",
+  "abstract": "Training large AI models efficiently requires distributing computation across\nmultiple accelerators, but this often incurs significant communication overhead\n-- especially during gradient synchronization. We introduce Dion, a\ncommunication-efficient optimizer that retains the synchronous semantics of\nstandard distributed training (e.g., DDP, FSDP) while substantially reducing\nI/O costs. Unlike conventional optimizers that synchronize full gradient\nmatrices, Dion leverages orthonormalized updates with device-local momentum\nbuffers, eliminating the need for full gradient exchange. It further supports\nan efficient sharding strategy that avoids reconstructing large matrices during\ntraining.",
+  "authors": [
+    "Kwangjun Ahn",
+    "Byron Xu"
+  ]
+}

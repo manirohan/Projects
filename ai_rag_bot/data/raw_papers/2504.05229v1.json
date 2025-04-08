@@ -1,0 +1,10 @@
+{
+  "id": "2504.05229v1",
+  "title": "FinGrAct: A Framework for FINe-GRrained Evaluation of ACTionability in\n  Explainable Automatic Fact-Checking",
+  "abstract": "The field of explainable Automatic Fact-Checking (AFC) aims to enhance the\ntransparency and trustworthiness of automated fact-verification systems by\nproviding clear and comprehensible explanations. However, the effectiveness of\nthese explanations depends on their actionability --their ability to empower\nusers to make informed decisions and mitigate misinformation. Despite\nactionability being a critical property of high-quality explanations, no prior\nresearch has proposed a dedicated method to evaluate it. This paper introduces\nFinGrAct, a fine-grained evaluation framework that can access the web, and it\nis designed to assess actionability in AFC explanations through well-defined\ncriteria and an evaluation dataset. FinGrAct surpasses state-of-the-art (SOTA)\nevaluators, achieving the highest Pearson and Kendall correlation with human\njudgments while demonstrating the lowest ego-centric bias, making it a more\nrobust evaluation approach for actionability evaluation in AFC.",
+  "authors": [
+    "Islam Eldifrawi",
+    "Shengrui Wang",
+    "Amine Trabelsi"
+  ]
+}

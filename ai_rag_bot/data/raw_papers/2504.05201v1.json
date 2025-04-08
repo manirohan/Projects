@@ -1,0 +1,12 @@
+{
+  "id": "2504.05201v1",
+  "title": "3D Universal Lesion Detection and Tagging in CT with Self-Training",
+  "abstract": "Radiologists routinely perform the tedious task of lesion localization,\nclassification, and size measurement in computed tomography (CT) studies.\nUniversal lesion detection and tagging (ULDT) can simultaneously help alleviate\nthe cumbersome nature of lesion measurement and enable tumor burden assessment.\nPrevious ULDT approaches utilize the publicly available DeepLesion dataset,\nhowever it does not provide the full volumetric (3D) extent of lesions and also\ndisplays a severe class imbalance. In this work, we propose a self-training\npipeline to detect 3D lesions and tag them according to the body part they\noccur in. We used a significantly limited 30\\% subset of DeepLesion to train a\nVFNet model for 2D lesion detection and tagging. Next, the 2D lesion context\nwas expanded into 3D, and the mined 3D lesion proposals were integrated back\ninto the baseline training data in order to retrain the model over multiple\nrounds. Through the self-training procedure, our VFNet model learned from its\nown predictions, detected lesions in 3D, and tagged them. Our results indicated\nthat our VFNet model achieved an average sensitivity of 46.9\\% at [0.125:8]\nfalse positives (FP) with a limited 30\\% data subset in comparison to the\n46.8\\% of an existing approach that used the entire DeepLesion dataset. To our\nknowledge, we are the first to jointly detect lesions in 3D and tag them\naccording to the body part label.",
+  "authors": [
+    "Jared Frazier",
+    "Tejas Sudharshan Mathai",
+    "Jianfei Liu",
+    "Angshuman Paul",
+    "Ronald M. Summers"
+  ]
+}

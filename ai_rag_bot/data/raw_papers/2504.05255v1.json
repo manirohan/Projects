@@ -1,0 +1,9 @@
+{
+  "id": "2504.05255v1",
+  "title": "Adversarial KA",
+  "abstract": "Regarding the representation theorem of Kolmogorov and Arnold (KA) as an\nalgorithm for representing or {\\guillemotleft}expressing{\\guillemotright}\nfunctions, we test its robustness by analyzing its ability to withstand\nadversarial attacks. We find KA to be robust to countable collections of\ncontinuous adversaries, but unearth a question about the equi-continuity of the\nouter functions that, so far, obstructs taking limits and defeating continuous\ngroups of adversaries. This question on the regularity of the outer functions\nis relevant to the debate over the applicability of KA to the general theory of\nNNs.",
+  "authors": [
+    "Sviatoslav Dzhenzher",
+    "Michael H. Freedman"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "2504.05172v1",
+  "title": "Attention-Based Multi-Scale Temporal Fusion Network for Uncertain-Mode\n  Fault Diagnosis in Multimode Processes",
+  "abstract": "Fault diagnosis in multimode processes plays a critical role in ensuring the\nsafe operation of industrial systems across multiple modes. It faces a great\nchallenge yet to be addressed - that is, the significant distributional\ndifferences among monitoring data from multiple modes make it difficult for the\nmodels to extract shared feature representations related to system health\nconditions. In response to this problem, this paper introduces a novel method\ncalled attention-based multi-scale temporal fusion network. The multi-scale\ndepthwise convolution and gated recurrent unit are employed to extract\nmulti-scale contextual local features and long-short-term features. A temporal\nattention mechanism is designed to focus on critical time points with higher\ncross-mode shared information, thereby enhancing the accuracy of fault\ndiagnosis. The proposed model is applied to Tennessee Eastman process dataset\nand three-phase flow facility dataset. The experiments demonstrate that the\nproposed model achieves superior diagnostic performance and maintains a small\nmodel size.",
+  "authors": [
+    "Guangqiang Li",
+    "M. Amine Atoui",
+    "Xiangshun Li"
+  ]
+}

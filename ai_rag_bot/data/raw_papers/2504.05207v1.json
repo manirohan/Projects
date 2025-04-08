@@ -1,0 +1,12 @@
+{
+  "id": "2504.05207v1",
+  "title": "Correcting Class Imbalances with Self-Training for Improved Universal\n  Lesion Detection and Tagging",
+  "abstract": "Universal lesion detection and tagging (ULDT) in CT studies is critical for\ntumor burden assessment and tracking the progression of lesion status\n(growth/shrinkage) over time. However, a lack of fully annotated data hinders\nthe development of effective ULDT approaches. Prior work used the DeepLesion\ndataset (4,427 patients, 10,594 studies, 32,120 CT slices, 32,735 lesions, 8\nbody part labels) for algorithmic development, but this dataset is not\ncompletely annotated and contains class imbalances. To address these issues, in\nthis work, we developed a self-training pipeline for ULDT. A VFNet model was\ntrained on a limited 11.5\\% subset of DeepLesion (bounding boxes + tags) to\ndetect and classify lesions in CT studies. Then, it identified and incorporated\nnovel lesion candidates from a larger unseen data subset into its training set,\nand self-trained itself over multiple rounds. Multiple self-training\nexperiments were conducted with different threshold policies to select\npredicted lesions with higher quality and cover the class imbalances. We\ndiscovered that direct self-training improved the sensitivities of\nover-represented lesion classes at the expense of under-represented classes.\nHowever, upsampling the lesions mined during self-training along with a\nvariable threshold policy yielded a 6.5\\% increase in sensitivity at 4 FP in\ncontrast to self-training without class balancing (72\\% vs 78.5\\%) and a 11.7\\%\nincrease compared to the same self-training policy without upsampling (66.8\\%\nvs 78.5\\%). Furthermore, we show that our results either improved or maintained\nthe sensitivity at 4FP for all 8 lesion classes.",
+  "authors": [
+    "Alexander Shieh",
+    "Tejas Sudharshan Mathai",
+    "Jianfei Liu",
+    "Angshuman Paul",
+    "Ronald M. Summers"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2504.05220v1",
+  "title": "Leveraging LLMs for Utility-Focused Annotation: Reducing Manual Effort\n  for Retrieval and RAG",
+  "abstract": "Retrieval models typically rely on costly human-labeled query-document\nrelevance annotations for training and evaluation. To reduce this cost and\nleverage the potential of Large Language Models (LLMs) in relevance judgments,\nwe aim to explore whether LLM-generated annotations can effectively replace\nhuman annotations in training retrieval models. Retrieval usually emphasizes\nrelevance, which indicates \"topic-relatedness\" of a document to a query, while\nin RAG, the value of a document (or utility) depends on how it contributes to\nanswer generation. Recognizing this mismatch, some researchers use LLM\nperformance on downstream tasks with documents as labels, but this approach\nrequires manual answers for specific tasks, leading to high costs and limited\ngeneralization. In another line of work, prompting LLMs to select useful\ndocuments as RAG references eliminates the need for human annotation and is not\ntask-specific. If we leverage LLMs' utility judgments to annotate retrieval\ndata, we may retain cross-task generalization without human annotation in\nlarge-scale corpora. Therefore, we investigate utility-focused annotation via\nLLMs for large-scale retriever training data across both in-domain and\nout-of-domain settings on the retrieval and RAG tasks. To reduce the impact of\nlow-quality positives labeled by LLMs, we design a novel loss function, i.e.,\nDisj-InfoNCE. Our experiments reveal that: (1) Retrievers trained on\nutility-focused annotations significantly outperform those trained on human\nannotations in the out-of-domain setting on both tasks, demonstrating superior\ngeneralization capabilities. (2) LLM annotation does not replace human\nannotation in the in-domain setting. However, incorporating just 20%\nhuman-annotated data enables retrievers trained with utility-focused\nannotations to match the performance of models trained entirely with human\nannotations.",
+  "authors": [
+    "Hengran Zhang",
+    "Minghao Tang",
+    "Keping Bi",
+    "Jiafeng Guo",
+    "Shihao Liu",
+    "Daiting Shi",
+    "Dawei Yin",
+    "Xueqi Cheng"
+  ]
+}

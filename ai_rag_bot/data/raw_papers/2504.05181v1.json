@@ -1,0 +1,10 @@
+{
+  "id": "2504.05181v1",
+  "title": "Lightweight and Direct Document Relevance Optimization for Generative\n  Information Retrieval",
+  "abstract": "Generative information retrieval (GenIR) is a promising neural retrieval\nparadigm that formulates document retrieval as a document identifier (docid)\ngeneration task, allowing for end-to-end optimization toward a unified global\nretrieval objective. However, existing GenIR models suffer from token-level\nmisalignment, where models trained to predict the next token often fail to\ncapture document-level relevance effectively. While reinforcement\nlearning-based methods, such as reinforcement learning from relevance feedback\n(RLRF), aim to address this misalignment through reward modeling, they\nintroduce significant complexity, requiring the optimization of an auxiliary\nreward function followed by reinforcement fine-tuning, which is computationally\nexpensive and often unstable. To address these challenges, we propose direct\ndocument relevance optimization (DDRO), which aligns token-level docid\ngeneration with document-level relevance estimation through direct optimization\nvia pairwise ranking, eliminating the need for explicit reward modeling and\nreinforcement learning. Experimental results on benchmark datasets, including\nMS MARCO document and Natural Questions, show that DDRO outperforms\nreinforcement learning-based methods, achieving a 7.4% improvement in MRR@10\nfor MS MARCO and a 19.9% improvement for Natural Questions. These findings\nhighlight DDRO's potential to enhance retrieval effectiveness with a simplified\noptimization approach. By framing alignment as a direct optimization problem,\nDDRO simplifies the ranking optimization pipeline of GenIR models while\noffering a viable alternative to reinforcement learning-based methods.",
+  "authors": [
+    "Kidist Amde Mekonnen",
+    "Yubao Tang",
+    "Maarten de Rijke"
+  ]
+}

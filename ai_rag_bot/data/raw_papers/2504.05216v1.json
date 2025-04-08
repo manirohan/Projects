@@ -1,0 +1,15 @@
+{
+  "id": "2504.05216v1",
+  "title": "Unleashing the Power of LLMs in Dense Retrieval with Query Likelihood\n  Modeling",
+  "abstract": "Dense retrieval is a crucial task in Information Retrieval (IR) and is the\nfoundation for downstream tasks such as re-ranking. Recently, large language\nmodels (LLMs) have shown compelling semantic understanding capabilities and are\nappealing to researchers studying dense retrieval. LLMs, as decoder-style\ngenerative models, are competent at language generation while falling short on\nmodeling global information due to the lack of attention to tokens afterward.\nInspired by the classical word-based language modeling approach for IR, i.e.,\nthe query likelihood (QL) model, we seek to sufficiently utilize LLMs'\ngenerative ability by QL maximization. However, instead of ranking documents\nwith QL estimation, we introduce an auxiliary task of QL maximization to yield\na better backbone for contrastively learning a discriminative retriever. We\nname our model as LLM-QL. To condense global document semantics to a single\nvector during QL modeling, LLM-QL has two major components, Attention Stop (AS)\nand Input Corruption (IC). AS stops the attention of predictive tokens to\nprevious tokens until the ending token of the document. IC masks a portion of\ntokens in the input documents during prediction. Experiments on MSMARCO show\nthat LLM-QL can achieve significantly better performance than other LLM-based\nretrievers and using QL estimated by LLM-QL for ranking outperforms word-based\nQL by a large margin.",
+  "authors": [
+    "Hengran Zhang",
+    "Keping Bi",
+    "Jiafeng Guo",
+    "Xiaojie Sun",
+    "Shihao Liu",
+    "Daiting Shi",
+    "Dawei Yin",
+    "Xueqi Cheng"
+  ]
+}

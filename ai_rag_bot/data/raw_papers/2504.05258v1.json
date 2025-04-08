@@ -1,0 +1,11 @@
+{
+  "id": "2504.05258v1",
+  "title": "Learning to Reason Over Time: Timeline Self-Reflection for Improved\n  Temporal Reasoning in Language Models",
+  "abstract": "Large Language Models (LLMs) have emerged as powerful tools for generating\ncoherent text, understanding context, and performing reasoning tasks. However,\nthey struggle with temporal reasoning, which requires processing time-related\ninformation such as event sequencing, durations, and inter-temporal\nrelationships. These capabilities are critical for applications including\nquestion answering, scheduling, and historical analysis. In this paper, we\nintroduce TISER, a novel framework that enhances the temporal reasoning\nabilities of LLMs through a multi-stage process that combines timeline\nconstruction with iterative self-reflection. Our approach leverages test-time\nscaling to extend the length of reasoning traces, enabling models to capture\ncomplex temporal dependencies more effectively. This strategy not only boosts\nreasoning accuracy but also improves the traceability of the inference process.\nExperimental results demonstrate state-of-the-art performance across multiple\nbenchmarks, including out-of-distribution test sets, and reveal that TISER\nenables smaller open-source models to surpass larger closed-weight models on\nchallenging temporal reasoning tasks.",
+  "authors": [
+    "Adri\u00e1n Bazaga",
+    "Rexhina Blloshmi",
+    "Bill Byrne",
+    "Adri\u00e0 de Gispert"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "2504.05167v1",
+  "title": "RLBayes: a Bayesian Network Structure Learning Algorithm via\n  Reinforcement Learning-Based Search Strategy",
+  "abstract": "The score-based structure learning of Bayesian network (BN) is an effective\nway to learn BN models, which are regarded as some of the most compelling\nprobabilistic graphical models in the field of representation and reasoning\nunder uncertainty. However, the search space of structure learning grows\nsuper-exponentially as the number of variables increases, which makes BN\nstructure learning an NP-hard problem, as well as a combination optimization\nproblem (COP). Despite the successes of many heuristic methods on it, the\nresults of the structure learning of BN are usually unsatisfactory. Inspired by\nQ-learning, in this paper, a Bayesian network structure learning algorithm via\nreinforcement learning-based (RL-based) search strategy is proposed, namely\nRLBayes. The method borrows the idea of RL and tends to record and guide the\nlearning process by a dynamically maintained Q-table. By creating and\nmaintaining the dynamic Q-table, RLBayes achieve storing the unlimited search\nspace within limited space, thereby achieving the structure learning of BN via\nQ-learning. Not only is it theoretically proved that RLBayes can converge to\nthe global optimal BN structure, but also it is experimentally proved that\nRLBayes has a better effect than almost all other heuristic search algorithms.",
+  "authors": [
+    "Mingcan Wang",
+    "Junchang Xin",
+    "Luxuan Qu",
+    "Qi Chen",
+    "Zhiqiong Wang"
+  ]
+}

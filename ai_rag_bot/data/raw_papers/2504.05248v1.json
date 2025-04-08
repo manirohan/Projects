@@ -1,0 +1,10 @@
+{
+  "id": "2504.05248v1",
+  "title": "PINNverse: Accurate parameter estimation in differential equations from\n  noisy data with constrained physics-informed neural networks",
+  "abstract": "Parameter estimation for differential equations from measured data is an\ninverse problem prevalent across quantitative sciences. Physics-Informed Neural\nNetworks (PINNs) have emerged as effective tools for solving such problems,\nespecially with sparse measurements and incomplete system information. However,\nPINNs face convergence issues, stability problems, overfitting, and complex\nloss function design. Here we introduce PINNverse, a training paradigm that\naddresses these limitations by reformulating the learning process as a\nconstrained differential optimization problem. This approach achieves a dynamic\nbalance between data loss and differential equation residual loss during\ntraining while preventing overfitting. PINNverse combines the advantages of\nPINNs with the Modified Differential Method of Multipliers to enable\nconvergence on any point on the Pareto front. We demonstrate robust and\naccurate parameter estimation from noisy data in four classical ODE and PDE\nmodels from physics and biology. Our method enables accurate parameter\ninference also when the forward problem is expensive to solve.",
+  "authors": [
+    "Marius Almanst\u00f6tter",
+    "Roman Vetter",
+    "Dagmar Iber"
+  ]
+}

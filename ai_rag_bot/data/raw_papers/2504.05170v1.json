@@ -1,0 +1,11 @@
+{
+  "id": "2504.05170v1",
+  "title": "SSLFusion: Scale & Space Aligned Latent Fusion Model for Multimodal 3D\n  Object Detection",
+  "abstract": "Multimodal 3D object detection based on deep neural networks has indeed made\nsignificant progress. However, it still faces challenges due to the\nmisalignment of scale and spatial information between features extracted from\n2D images and those derived from 3D point clouds. Existing methods usually\naggregate multimodal features at a single stage. However, leveraging\nmulti-stage cross-modal features is crucial for detecting objects of various\nscales. Therefore, these methods often struggle to integrate features across\ndifferent scales and modalities effectively, thereby restricting the accuracy\nof detection. Additionally, the time-consuming Query-Key-Value-based\n(QKV-based) cross-attention operations often utilized in existing methods aid\nin reasoning the location and existence of objects by capturing non-local\ncontexts. However, this approach tends to increase computational complexity. To\naddress these challenges, we present SSLFusion, a novel Scale & Space Aligned\nLatent Fusion Model, consisting of a scale-aligned fusion strategy (SAF), a\n3D-to-2D space alignment module (SAM), and a latent cross-modal fusion module\n(LFM). SAF mitigates scale misalignment between modalities by aggregating\nfeatures from both images and point clouds across multiple levels. SAM is\ndesigned to reduce the inter-modal gap between features from images and point\nclouds by incorporating 3D coordinate information into 2D image features.\nAdditionally, LFM captures cross-modal non-local contexts in the latent space\nwithout utilizing the QKV-based attention operations, thus mitigating\ncomputational complexity. Experiments on the KITTI and DENSE datasets\ndemonstrate that our SSLFusion outperforms state-of-the-art methods. Our\napproach obtains an absolute gain of 2.15% in 3D AP, compared with the\nstate-of-art method GraphAlign on the moderate level of the KITTI test set.",
+  "authors": [
+    "Bonan Ding",
+    "Jin Xie",
+    "Jing Nie",
+    "Jiale Cao"
+  ]
+}

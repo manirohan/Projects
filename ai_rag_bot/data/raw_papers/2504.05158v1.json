@@ -1,0 +1,10 @@
+{
+  "id": "2504.05158v1",
+  "title": "Leveraging Label Potential for Enhanced Multimodal Emotion Recognition",
+  "abstract": "Multimodal emotion recognition (MER) seeks to integrate various modalities to\npredict emotional states accurately. However, most current research focuses\nsolely on the fusion of audio and text features, overlooking the valuable\ninformation in emotion labels. This oversight could potentially hinder the\nperformance of existing methods, as emotion labels harbor rich, insightful\ninformation that could significantly aid MER. We introduce a novel model called\nLabel Signal-Guided Multimodal Emotion Recognition (LSGMER) to overcome this\nlimitation. This model aims to fully harness the power of emotion label\ninformation to boost the classification accuracy and stability of MER.\nSpecifically, LSGMER employs a Label Signal Enhancement module that optimizes\nthe representation of modality features by interacting with audio and text\nfeatures through label embeddings, enabling it to capture the nuances of\nemotions precisely. Furthermore, we propose a Joint Objective Optimization(JOO)\napproach to enhance classification accuracy by introducing the\nAttribution-Prediction Consistency Constraint (APC), which strengthens the\nalignment between fused features and emotion categories. Extensive experiments\nconducted on the IEMOCAP and MELD datasets have demonstrated the effectiveness\nof our proposed LSGMER model.",
+  "authors": [
+    "Xuechun Shao",
+    "Yinfeng Yu",
+    "Liejun Wang"
+  ]
+}

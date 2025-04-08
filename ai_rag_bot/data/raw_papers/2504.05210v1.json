@@ -1,0 +1,8 @@
+{
+  "id": "2504.05210v1",
+  "title": "A moving target in AI-assisted decision-making: Dataset shift, model\n  updating, and the problem of update opacity",
+  "abstract": "Machine learning (ML) systems are vulnerable to performance decline over time\ndue to dataset shift. To address this problem, experts often suggest that ML\nsystems should be regularly updated to ensure ongoing performance stability.\nSome scholarly literature has begun to address the epistemic and ethical\nchallenges associated with different updating methodologies. Thus far, however,\nlittle attention has been paid to the impact of model updating on the\nML-assisted decision-making process itself, particularly in the AI ethics and\nAI epistemology literatures. This article aims to address this gap in the\nliterature. It argues that model updating introduces a new sub-type of opacity\ninto ML-assisted decision-making -- update opacity -- that occurs when users\ncannot understand how or why an update has changed the reasoning or behaviour\nof an ML system. This type of opacity presents a variety of distinctive\nepistemic and safety concerns that available solutions to the black box problem\nin ML are largely ill-equipped to address. A variety of alternative strategies\nmay be developed or pursued to address the problem of update opacity more\ndirectly, including bi-factual explanations, dynamic model reporting, and\nupdate compatibility. However, each of these strategies presents its own risks\nor carries significant limitations. Further research will be needed to address\nthe epistemic and safety concerns associated with model updating and update\nopacity going forward.",
+  "authors": [
+    "Joshua Hatherley"
+  ]
+}

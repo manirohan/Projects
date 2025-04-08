@@ -1,0 +1,9 @@
+{
+  "id": "2504.05254v1",
+  "title": "Explaining Low Perception Model Competency with High-Competency\n  Counterfactuals",
+  "abstract": "There exist many methods to explain how an image classification model\ngenerates its decision, but very little work has explored methods to explain\nwhy a classifier might lack confidence in its prediction. As there are various\nreasons the classifier might lose confidence, it would be valuable for this\nmodel to not only indicate its level of uncertainty but also explain why it is\nuncertain. Counterfactual images have been used to visualize changes that could\nbe made to an image to generate a different classification decision. In this\nwork, we explore the use of counterfactuals to offer an explanation for low\nmodel competency--a generalized form of predictive uncertainty that measures\nconfidence. Toward this end, we develop five novel methods to generate\nhigh-competency counterfactual images, namely Image Gradient Descent (IGD),\nFeature Gradient Descent (FGD), Autoencoder Reconstruction (Reco), Latent\nGradient Descent (LGD), and Latent Nearest Neighbors (LNN). We evaluate these\nmethods across two unique datasets containing images with six known causes for\nlow model competency and find Reco, LGD, and LNN to be the most promising\nmethods for counterfactual generation. We further evaluate how these three\nmethods can be utilized by pre-trained Multimodal Large Language Models (MLLMs)\nto generate language explanations for low model competency. We find that the\ninclusion of a counterfactual image in the language model query greatly\nincreases the ability of the model to generate an accurate explanation for the\ncause of low model competency, thus demonstrating the utility of counterfactual\nimages in explaining low perception model competency.",
+  "authors": [
+    "Sara Pohland",
+    "Claire Tomlin"
+  ]
+}

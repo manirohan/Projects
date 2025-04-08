@@ -1,0 +1,12 @@
+{
+  "id": "2504.05196v1",
+  "title": "Universal Lymph Node Detection in Multiparametric MRI with Selective\n  Augmentation",
+  "abstract": "Robust localization of lymph nodes (LNs) in multiparametric MRI (mpMRI) is\ncritical for the assessment of lymphadenopathy. Radiologists routinely measure\nthe size of LN to distinguish benign from malignant nodes, which would require\nsubsequent cancer staging. Sizing is a cumbersome task compounded by the\ndiverse appearances of LNs in mpMRI, which renders their measurement difficult.\nFurthermore, smaller and potentially metastatic LNs could be missed during a\nbusy clinical day. To alleviate these imaging and workflow problems, we propose\na pipeline to universally detect both benign and metastatic nodes in the body\nfor their ensuing measurement. The recently proposed VFNet neural network was\nemployed to identify LN in T2 fat suppressed and diffusion weighted imaging\n(DWI) sequences acquired by various scanners with a variety of exam protocols.\nWe also use a selective augmentation technique known as Intra-Label LISA (ILL)\nto diversify the input data samples the model sees during training, such that\nit improves its robustness during the evaluation phase. We achieved a\nsensitivity of $\\sim$83\\% with ILL vs. $\\sim$80\\% without ILL at 4 FP/vol.\nCompared with current LN detection approaches evaluated on mpMRI, we show a\nsensitivity improvement of $\\sim$9\\% at 4 FP/vol.",
+  "authors": [
+    "Tejas Sudharshan Mathai",
+    "Sungwon Lee",
+    "Thomas C. Shen",
+    "Zhiyong Lu",
+    "Ronald M. Summers"
+  ]
+}

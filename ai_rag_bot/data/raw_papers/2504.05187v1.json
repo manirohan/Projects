@@ -1,0 +1,11 @@
+{
+  "id": "2504.05187v1",
+  "title": "Resource-Efficient Beam Prediction in mmWave Communications with\n  Multimodal Realistic Simulation Framework",
+  "abstract": "Beamforming is a key technology in millimeter-wave (mmWave) communications\nthat improves signal transmission by optimizing directionality and intensity.\nHowever, conventional channel estimation methods, such as pilot signals or beam\nsweeping, often fail to adapt to rapidly changing communication environments.\nTo address this limitation, multimodal sensing-aided beam prediction has gained\nsignificant attention, using various sensing data from devices such as LiDAR,\nradar, GPS, and RGB images to predict user locations or network conditions.\nDespite its promising potential, the adoption of multimodal sensing-aided beam\nprediction is hindered by high computational complexity, high costs, and\nlimited datasets. Thus, in this paper, a resource-efficient learning approach\nis proposed to transfer knowledge from a multimodal network to a monomodal\n(radar-only) network based on cross-modal relational knowledge distillation\n(CRKD), while reducing computational overhead and preserving predictive\naccuracy. To enable multimodal learning with realistic data, a novel multimodal\nsimulation framework is developed while integrating sensor data generated from\nthe autonomous driving simulator CARLA with MATLAB-based mmWave channel\nmodeling, and reflecting real-world conditions. The proposed CRKD achieves its\nobjective by distilling relational information across different feature spaces,\nwhich enhances beam prediction performance without relying on expensive sensor\ndata. Simulation results demonstrate that CRKD efficiently distills multimodal\nknowledge, allowing a radar-only model to achieve $94.62\\%$ of the teacher\nperformance. In particular, this is achieved with just $10\\%$ of the teacher\nnetwork's parameters, thereby significantly reducing computational complexity\nand dependence on multimodal sensor data.",
+  "authors": [
+    "Yu Min Park",
+    "Yan Kyaw Tun",
+    "Walid Saad",
+    "Choong Seon Hong"
+  ]
+}

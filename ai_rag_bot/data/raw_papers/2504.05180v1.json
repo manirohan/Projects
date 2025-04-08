@@ -1,0 +1,13 @@
+{
+  "id": "2504.05180v1",
+  "title": "BRIDGES: Bridging Graph Modality and Large Language Models within EDA\n  Tasks",
+  "abstract": "While many EDA tasks already involve graph-based data, existing LLMs in EDA\nprimarily either represent graphs as sequential text, or simply ignore\ngraph-structured data that might be beneficial like dataflow graphs of RTL\ncode. Recent studies have found that LLM performance suffers when graphs are\nrepresented as sequential text, and using additional graph information\nsignificantly boosts performance. To address these challenges, we introduce\nBRIDGES, a framework designed to incorporate graph modality into LLMs for EDA\ntasks. BRIDGES integrates an automated data generation workflow, a solution\nthat combines graph modality with LLM, and a comprehensive evaluation suite.\nFirst, we establish an LLM-driven workflow to generate RTL and netlist-level\ndata, converting them into dataflow and netlist graphs with function\ndescriptions. This workflow yields a large-scale dataset comprising over\n500,000 graph instances and more than 1.5 billion tokens. Second, we propose a\nlightweight cross-modal projector that encodes graph representations into\ntext-compatible prompts, enabling LLMs to effectively utilize graph data\nwithout architectural modifications. Experimental results demonstrate 2x to 10x\nimprovements across multiple tasks compared to text-only baselines, including\naccuracy in design retrieval, type prediction and perplexity in function\ndescription, with negligible computational overhead (<1% model weights increase\nand <30% additional runtime overhead). Even without additional LLM finetuning,\nour results outperform text-only by a large margin. We plan to release BRIDGES,\nincluding the dataset, models, and training flow.",
+  "authors": [
+    "Wei Li",
+    "Yang Zou",
+    "Christopher Ellis",
+    "Ruben Purdy",
+    "Shawn Blanton",
+    "Jos\u00e9 M. F. Moura"
+  ]
+}

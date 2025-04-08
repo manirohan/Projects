@@ -1,0 +1,14 @@
+{
+  "id": "2504.05231v1",
+  "title": "Mapping biodiversity at very-high resolution in Europe",
+  "abstract": "This paper describes a cascading multimodal pipeline for high-resolution\nbiodiversity mapping across Europe, integrating species distribution modeling,\nbiodiversity indicators, and habitat classification. The proposed pipeline\nfirst predicts species compositions using a deep-SDM, a multimodal model\ntrained on remote sensing, climate time series, and species occurrence data at\n50x50m resolution. These predictions are then used to generate biodiversity\nindicator maps and classify habitats with Pl@ntBERT, a transformer-based LLM\ndesigned for species-to-habitat mapping. With this approach, continental-scale\nspecies distribution maps, biodiversity indicator maps, and habitat maps are\nproduced, providing fine-grained ecological insights. Unlike traditional\nmethods, this framework enables joint modeling of interspecies dependencies,\nbias-aware training with heterogeneous presence-absence data, and large-scale\ninference from multi-source remote sensing inputs.",
+  "authors": [
+    "C\u00e9sar Leblanc",
+    "Lukas Picek",
+    "Benjamin Deneu",
+    "Pierre Bonnet",
+    "Maximilien Servajean",
+    "R\u00e9mi Palard",
+    "Alexis Joly"
+  ]
+}
