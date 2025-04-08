@@ -1,21 +1,36 @@
 import streamlit as st
 st.set_page_config(page_title="AI Paper RAG Bot", layout="wide")
 
+import sys
 from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+from src.preprocess import preprocess_document
+from src.build_index import add_to_index
+# other imports...
+
+
+from pathlib import Path
+import os
 import faiss
 import pickle
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 
+from src.preprocess import preprocess_document
+from src.build_index import add_to_index
 
-# ==== Setup ====
-client = OpenAI()
+# ==== Constants ====
 EMBED_MODEL = "all-MiniLM-L6-v2"
 OPENAI_MODEL = "gpt-4"
 CHUNK_DIR = "data/processed_chunks"
+RAW_DIR = "data/raw_papers"
 INDEX_PATH = "embeddings/faiss_index/faiss_index.bin"
 METADATA_PATH = "embeddings/faiss_index/metadata.pkl"
+
+# ==== Setup ====
+client = OpenAI()
 
 @st.cache_resource
 def load_index_and_model():
@@ -27,7 +42,25 @@ def load_index_and_model():
 
 index, metadata, embedder = load_index_and_model()
 
-# ==== UI ====
+# ==== Sidebar: Upload Paper ====
+st.sidebar.header("📤 Upload AI Paper")
+uploaded_file = st.sidebar.file_uploader("Upload a PDF file", type=["pdf"])
+
+if uploaded_file:
+    with st.spinner("Processing uploaded paper..."):
+        # Save PDF to disk
+        os.makedirs(RAW_DIR, exist_ok=True)
+        raw_path = os.path.join(RAW_DIR, uploaded_file.name)
+        with open(raw_path, "wb") as f:
+            f.write(uploaded_file.getbuffer())
+
+        # Preprocess and index
+        new_chunks = preprocess_document(raw_path)
+        add_to_index(new_chunks)
+
+        st.sidebar.success("✅ Paper indexed and ready to query!")
+
+# ==== Main UI ====
 st.title("📚 AI Research RAG Bot")
 st.markdown("Ask a question based on recent AI papers.")
 
